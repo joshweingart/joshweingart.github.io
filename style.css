@@ -1,0 +1,93 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 0px 20px 0px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 15px 20px 30px;
+}
+
+.first {
+    font-family: 'Roboto Slab', serif;
+}
+
+.hover_img {
+    display: inline;
+    margin-right: -18px;    
+}
+
+.hover_img a span { display:none; z-index:-1; }
+.hover_img a:hover span { 
+    opacity: 0.5;
+    display:block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.project {
+    max-width: 900px;
+    display: block;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#batt {
+    display: block;
+    max-width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+#store {
+    width: 400px;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #666666;
+}
+
+a {
+
+    background-image: linear-gradient(
+        180deg, rgba(0,0,0,0),
+        rgba(0,0,0,0) 83%, 
+        #222222 83.1%,
+        #222222 88%,
+        rgba(0,0,0,0) 88.1%,
+        rgba(0,0,0,0)
+    );
+    text-decoration: none;
+}
+
+#back {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+/h1::selection {
+    background-color: darkorange;
+    color: white;
+}
+
+/.first::selection {
+    background-color: darkorange;
+  color: white;
+}
