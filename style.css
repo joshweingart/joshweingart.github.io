@@ -43,15 +43,6 @@ p {
     margin-bottom: 30px;
 }
 
-#batt {
-    display: block;
-    max-width: 300px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto; 
-    margin-right: 0;
-}
-
 #store {
     width: 400px;
 }
