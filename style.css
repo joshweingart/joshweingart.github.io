@@ -24,17 +24,6 @@ p {
     margin-right: -18px;    
 }
 
-.hover_img a span { display:none; z-index:-1; }
-.hover_img a:hover span { 
-    opacity: 0.5;
-    display:block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) 
-}
-
 .project {
     max-width: 900px;
     display: block;
@@ -53,6 +42,25 @@ a:link {
 
 a:visited {
     color: #666666;
+}
+
+.hover_img a span { display:none; z-index:-1; }
+.hover_img a:hover span { 
+    opacity: 0.5;
+    display:block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+
+@media (pointer: fine) {
+  a span {
+    display: none;
+  }
+  a:hover span {
+    display: inline-block;
+  }
 }
 
 a {
