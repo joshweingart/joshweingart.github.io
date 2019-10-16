@@ -44,8 +44,9 @@ a:visited {
     color: #666666;
 }
 
+
 .hover_img a span { display:none; z-index:-1; }
-.hover_img a:hover span { 
+/*.hover_img a:hover span { 
     opacity: 0.5;
     display:block;
     position: fixed;
@@ -53,11 +54,12 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%) 
 }
+*/
 
 /*Disabling hover??*/
 @media (hover:none) {
     .hover_img a:hover span {
-        display: inherit;
+        display: none;
         color: inherit;
     }
 }
