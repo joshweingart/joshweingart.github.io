@@ -54,14 +54,22 @@ a:visited {
     transform: translate(-50%, -50%) 
 }
 
-@media (pointer: fine) {
-  a span {
+/*Disabling hover??*/
+@media (max-width:600px) {
+    .hover_img a:hover span {
+        display: none;
+        color: inherit;
+    }
+}
+
+/* @media (min-width: 500px) {
+.hover_img a:hover span {
     display: none;
   }
   a:hover span {
     display: inline-block;
   }
-}
+}*/
 
 a {
 
