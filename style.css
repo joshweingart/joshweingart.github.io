@@ -6,7 +6,8 @@ h1 {
     margin: 0px 40px 0px;
 }
 
-p {
+
+#draft {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 300;
@@ -15,7 +16,6 @@ p {
     max-width: 1200px
 }
 
-/*
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -23,7 +23,7 @@ p {
     line-height: 130%;
     margin: 15px 40px 30px;
 }
-*/
+
 
 .first {
     font-family: 'Roboto Slab', serif;
@@ -65,17 +65,6 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%) 
 }
-
-
-/*Disabling hover??*/
-/* @media (min-width: 500px) {
-.hover_img a:hover span {
-    display: none;
-  }
-  a:hover span {
-    display: inline-block;
-  }
-}*/ 
 
 a {
 
