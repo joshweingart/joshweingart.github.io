@@ -8,11 +8,22 @@ h1 {
 
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 15px auto 30px;
+    max-width: 1200px
+}
+
+/*
+p {
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: 300;
     line-height: 130%;
     margin: 15px 40px 30px;
 }
+*/
 
 .first {
     font-family: 'Roboto Slab', serif;
