@@ -118,6 +118,10 @@ a {
     margin-right: -6px;    
     }
     
+    .hover_img a:hover span {
+        display: none;
+    }
+    
     .paragraphContainer {
         padding: 0px 10px 0px;
         margin: 0px auto;
