@@ -8,10 +8,15 @@ h1 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
     line-height: 130%;
-    margin: 15px 40px 30px;
+}
+
+.paragraphContainer {
+    max-width: 1200px;
+    margin: -20px auto;
+    padding: 0px 40px 0px;
 }
 
 #draft {
@@ -33,16 +38,24 @@ p {
     margin-right: -16px;    
 }
 
-.project {
+
+.projectContainer {
     max-width: 900px;
-    display: block;
-    margin:auto;
-    margin-top: 30px;
+    margin: 0 auto;
+    padding: 40px 40px 0px;
+}
+
+.project {
+    width: 100%;
+    max-width: 900px;
     margin-bottom: 30px;
 }
 
 #store {
-    width: 400px;
+    display:block;
+    max-width: 400px;
+    margin: 0px auto 30px;
+    text-align: center;
 }
 
 a:link {
@@ -92,4 +105,33 @@ a {
 /.first::selection {
     background-color: darkorange;
   color: white;
+}
+
+/*M O B I L E*/
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        margin: 0px 10px 0px;
+    }
+    
+    .hover_img {
+    margin-right: -6px;    
+    }
+    
+    .paragraphContainer {
+        padding: 0px 10px 0px;
+        margin: 0px auto;
+    }
+    
+    p {
+        font-size: 20px
+    }
+    
+    .projectContainer {
+        padding: 0px 10px 0px;
+    }
+
+    .project {
+        margin-bottom: 10px;   
+    }
 }
