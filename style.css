@@ -13,6 +13,14 @@ p {
     line-height: 130%;
 }
 
+.caption {
+    font-size: 12px;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -30px;
+}
+
 .paragraphContainer {
     max-width: 1200px;
     margin: -20px auto;
@@ -31,31 +39,6 @@ p {
 .first {
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
-}
-
-.hover_img {
-    display: inline;
-    margin-right: -16px;    
-}
-
-
-.projectContainer {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 40px 0px;
-}
-
-.project {
-    width: 100%;
-    max-width: 900px;
-    margin-bottom: 30px;
-}
-
-#store {
-    display:block;
-    max-width: 400px;
-    margin: 0px auto 30px;
-    text-align: center;
 }
 
 a:link {
@@ -78,7 +61,6 @@ a:visited {
 }
 
 a {
-
     background-image: linear-gradient(
         180deg, rgba(0,0,0,0),
         rgba(0,0,0,0) 84%, 
@@ -88,6 +70,38 @@ a {
         rgba(0,0,0,0)
     );
     text-decoration: none;
+}
+
+.hover_img {
+    display: inline;
+    margin-right: -16px;    
+}
+
+.projectContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 40px 0px;
+}
+
+.project {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(
+        180deg, rgba(0,0,0,0),
+        rgba(0,0,0,0) 84%, 
+        #ffffff 84%,
+        #ffffff 88%,
+        rgba(0,0,0,0) 88%,
+        rgba(0,0,0,0)
+    );
+}
+
+#store {
+    display:block;
+    max-width: 400px;
+    margin: 0px auto 30px;
+    text-align: center;
 }
 
 #back {
@@ -125,6 +139,10 @@ a {
     .paragraphContainer {
         padding: 0px 10px 0px;
         margin: 0px auto;
+    }
+    
+    .caption {
+        margin-top: -10px;
     }
     
     p {
