@@ -24,7 +24,7 @@ p {
 .paragraphContainer {
     max-width: 1200px;
     margin: -20px auto;
-    padding: 0px 40px 0px;
+    padding: 0px 90px 0px;
 }
 
 #draft {
@@ -61,6 +61,11 @@ a:visited {
 }
 
 a {
+  
+    text-decoration: none;
+}
+
+.hover_img {
     background-image: linear-gradient(
         180deg, rgba(0,0,0,0),
         rgba(0,0,0,0) 84%, 
@@ -69,10 +74,6 @@ a {
         rgba(0,0,0,0) 88%,
         rgba(0,0,0,0)
     );
-    text-decoration: none;
-}
-
-.hover_img {
     display: inline;
     margin-right: -16px;    
 }
@@ -80,7 +81,7 @@ a {
 .projectContainer {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 40px 0px;
+    padding: 40px 90px 0px;
 }
 
 .project {
@@ -105,10 +106,52 @@ a {
 }
 
 #back {
-    width: 100px;
+    font-size: 60px;
+    text-align: center;
     display: block;
-    margin: auto;
     margin-bottom: 30px;
+}
+
+.leftLinkContainer {
+    width: 100vh;
+    height: 80px;
+    transform-origin: top left;
+    position: fixed;
+    left: 0;
+    top: 100%;
+    transform: rotate(-90deg);
+}
+
+.rightLinkContainer {
+    width: 100vh;
+    height: 80px;
+    transform-origin: top right;
+    position: fixed;
+    right: 0;
+    top: 100%;
+    transform: rotate(90deg);
+}
+
+.sideLink {
+    font-family: 'Roboto', serif;     
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .3px;
+    text-align: center;
+    margin-top: 40px;    
+}
+
+.sideLinkText{
+    margin: 0px 6px 0px;
+}
+
+#arrowUpward{
+    vertical-align: -3.5px;
+    font-size: 18px;
+}
+
+#mobileArrow{
+    display: none;
 }
 
 /h1::selection {
@@ -156,4 +199,49 @@ a {
     .project {
         margin-bottom: 10px;   
     }
+
+    .leftLinkContainer {
+    width: auto;
+    height: 30px;
+    position: static;
+    left: default;
+    transform: none;
+    }
+
+    .rightLinkContainer {
+    width: auto;
+    height: 60px;
+    position: static;
+    right: default;
+    transform: none;
+    
+    }
+
+    .sideLink {
+    font-family: 'Roboto', serif;     
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .3px;
+    text-align: center;
+    margin-top: 40px;    
+    }
+
+    .sideLinkText{
+    margin: 0px 6px 0px;
+    }
+
+    #arrowUpward{
+    display: none;
+    }
+    
+    #mobileArrow{
+    display: unset;
+    vertical-align: -3.5px;
+    font-size: 18px;
+    }
+    
+    #back {
+    font-size: 40px
+    }
+    
 }
