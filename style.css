@@ -89,14 +89,14 @@ a {
 }
 
 .projectContainer {
-    max-width: 900px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 40px 90px 0px;
 }
 
 .project {
     width: 100%;
-    max-width: 900px;
+    max-width: 1600px;
     margin-bottom: 30px;
     background-image: linear-gradient(
         180deg, rgba(0,0,0,0),
@@ -162,16 +162,6 @@ a {
 
 #mobileArrow{
     display: none;
-}
-
-/h1::selection {
-    background-color: darkorange;
-    color: white;
-}
-
-/.first::selection {
-    background-color: darkorange;
-  color: white;
 }
 
 /*M O B I L E*/
