@@ -116,6 +116,13 @@ a {
     display: block;
 }
 
+#theothergif{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
 #store {
     display:block;
     max-width: 400px;
