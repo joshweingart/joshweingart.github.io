@@ -1,29 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>School of Visual Arts Digital Viewbook</title>
+    <meta charset="UTF-8" />
+    <title>SVA Digital Viewbook</title>
+    
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400" rel="stylesheet">    
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <meta name="keywords" content="Josh, Weingart, design, nyc">
+    <meta name="description" content="Josh Weingart is a graphic designer living in New York">
+        
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 </head>
 
 <body>
+<nav>
+    <ul>
+        <li><a href="index.html">joshweingart</a></li>
+        <li>.</li>
+        <li><a href="#" id="info-button">projectinfo</a></li>
+    </ul>
+</nav>
 
-<div class="paragraphContainer">    
-    <p>
-        <span class="first">The School of Visual Arts Digital Viewbook</span> is a parallax website that uses a wide array of scroll effects to entice prospective undergrad SVA students. I used Sketch and Principle to create mobile and desktop interactive prototypes and to simulate parallax scrolling effects. I then handed off designs and prototypes to developers in GitLab. 
-    <br><br>    
+<div id="projectSidebar">
+
+    <div class="sidebar-content">
+        <button id="close-button">close</button>
+
+        <p>The School of Visual Arts Digital Viewbook is a parallax website that uses a wide array of scroll effects to entice prospective undergrad SVA students. I used Sketch and Principle to create mobile and desktop interactive prototypes and to simulate parallax scrolling effects. I then handed off designs and prototypes to developers in GitLab. 
+        </p><p>    
         The project was a 2021 Webby People's Voice Winner for best school/university website!        
-    <br><br>
+        </p><p>    
         As part of the SVA’s in-house design studio, the Visual Arts Press, I worked with Brian Smith, Eric Corriel, and Declan Van Welie.
-    </p>
+        </p>
+        
+    </div>
 </div>
     
+<div id="overlay"></div>
+
+
 <div class="projectContainer">
     
+    <h1 class="projectTitle">SVA Digital Viewbook</h1>
+
     <iframe class="project" height="658" src="https://www.youtube.com/embed/HKASD5tBW10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <img class="project" id="tinyPic" src="assets/viewbook/intro.gif">
@@ -36,19 +62,20 @@
         <p class="caption">screenshot of parallax prototype document</p>    
     <img class="project" src="assets/viewbook/mobileviewbook.jpg">
         <p class="caption">form and department pages conclude the viewbook</p>    
-    
-</div>
+
+</div>    
+
     
 <!--Bottom Nav-->    
 <div class="leftLinkContainer">
     <div class="sideLink">
-    <a href="cente.html">
-        <span class="material-icons" id="arrowUpward">
+    <a href="sva.html">
+        <span class="material-symbols-outlined" id="arrowUpward">
         arrow_upward</span>
-        <span class="material-icons" id="mobileArrow">arrow_back</span>
-            <span class="sideLinkText">Cente</span>
-        <span class="material-icons" id="mobileArrow">arrow_back</span>
-        <span class="material-icons" id="arrowUpward">
+        <span class="material-symbols-outlined" id="mobileArrow">arrow_back</span>
+            <span class="sideLinkText">SVA.edu 4.0</span>
+        <span class="material-symbols-outlined" id="mobileArrow">arrow_back</span>
+        <span class="material-symbols-outlined" id="arrowUpward">
         arrow_upward</span>
     </a>  
     </div>        
@@ -56,22 +83,65 @@
 
 <div class="rightLinkContainer">
     <div class="sideLink">
-    <a href="less.html">
-        <span class="material-icons" id="arrowUpward">
+    <a href="aris9.html">
+        <span class="material-symbols-outlined" id="arrowUpward">
         arrow_upward</span>
-        <span class="material-icons" id="mobileArrow">arrow_forward</span>
-            <span class="sideLinkText">Less(-)</span>
-        <span class="material-icons" id="mobileArrow">arrow_forward</span>
-        <span class="material-icons" id="arrowUpward">
+        <span class="material-symbols-outlined" id="mobileArrow">arrow_forward</span>
+            <span class="sideLinkText">ARIS 9</span>
+        <span class="material-symbols-outlined" id="mobileArrow">arrow_forward</span>
+        <span class="material-symbols-outlined" id="arrowUpward">
         arrow_upward</span>
     </a>  
     </div>        
-</div>    
+</div>      
     
-<a href="index.html"><span id="back" class="material-icons">
-    home</span>
-</a>    
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+ $(document).ready(function() {
+  $('#info-button').click(function(event) {
+    event.preventDefault();
+    $('#projectSidebar').toggleClass('show');
+    $('#overlay').toggle();
+    
+      
+      if ($(window).width() < 768) {
+      $('body').toggleClass('projectSidebar-open');
+    }
+  });
 
-</body>    
-</html> 
+  $('#close-button').click(function(event) {
+    event.preventDefault();
+    $('#projectSidebar').removeClass('show');
+    $('#overlay').hide();
+    
+      
+      if ($(window).width() < 768) { // if the window width is less than 768 pixels
+      $('body').removeClass('projectSidebar-open');
+    }
+  });
 
+  $(document).click(function(event) {
+    if (!$(event.target).closest('#projectSidebar').length && !$(event.target).is('#projectSidebar') && !$(event.target).is('#info-button')) { // if the window width is less than 768 pixels
+      $('#projectSidebar').removeClass('show');
+      $('#overlay').hide();
+      
+        
+        if ($(window).width() < 768) { // if the window width is less than 768 pixels
+        $('body').removeClass('projectSidebar-open');
+      }
+    }
+  });
+  
+  $(window).resize(function() {
+    if ($(window).width() >= 768) {
+      $('body').removeClass('projectSidebar-open');
+    }
+  });
+});
+
+</script>
+
+</body>
+
+</html>

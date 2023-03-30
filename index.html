@@ -1,92 +1,171 @@
-<!---☺--->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
     <title>Josh Weingart</title>
+    
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    
     <meta name="keywords" content="Josh, Weingart, design, nyc">
     <meta name="description" content="Josh Weingart is a graphic designer living in New York">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 </head>
 
 <body>
+<nav>
+    <ul>
+        <li><a href="index.html">joshweingart</a></li>
+        <li>.</li>
+        <li><a href="#" id="info-button">info</a></li>
+    </ul>
+</nav>
 
-<h1>
-    <span class="first">Josh Weingart</span> (no relation) is a designer living in Brooklyn. He can create and maintain design systems inside and out, and is a Sketch aficionado who can make interactive prototypes.
-<br><br> 
-    He's made
-    
-    <div class="hover_img">
-        <a href="cente.html">branding for a bike company<span><img src="assets/thumb/cente.jpg"/></span></a>
-    </div>,
+<div id="sidebar">
 
-    <div class="hover_img">
-        <a href="sva.html">the School of Visual Arts' new website<span><img src="assets/thumb/sva.jpg"/></span></a>
-    </div>,
+    <div class="sidebar-content">
+        <button id="close-button">close</button>
+
+        <p> Passionate for minimalistic and striking design. For the past 7 years, I have been involved in a variety of projects, including branding, product design, and campaign creation.
+        </p>
+        <p>
+        Currently working at Leibowitz Design, but always down to collaborate. I can be reached <a href="mailto:joshweingart@gmail.com">here.</a>
+        </p>
+
+    </div>
+</div>
     
-    <div class="hover_img">
-        <a href="viewbook.html">parallax scrolling prototypes for SVA’s digital viewbook<span><img src="assets/thumb/logopattern.jpg"/></span></a>
-    </div>,
+<div id="overlay"></div>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>A designer living in Brooklyn. Focused on brand identities, art direction, and user experience. </h1>
+    </div>
+</section>
+
+<div class="projectContainer">
     
-    <div class="hover_img">
-        <a href="less.html">branding for a bookstore<span><img src="assets/thumb/less.jpg"/></span></a>
-    </div>, 
+    <div class="coverContainer">  
+        <a  href="presilium.html">
+            <img class="project" id="homepagePic" src="assets/presilium/presiliumcover.jpg">
+            <h3>Presilium Private Wealth<br>
+            <span>Identity for an Independent Investment Adviser</span></h3>
+        </a>
+    </div> 
     
-    <div class="hover_img">
-        <a href="dia.html">a visitor’s guide for Dia:Beacon<span><img src="assets/thumb/dia.jpg"/></span></a>
-    </div>, 
+    <div class="coverContainer">  
+        <a  href="intergy.html">
+            <img class="project" id="homepagePic" src="assets/intergy/intergycover.jpg">
+            <h3>Intergy Private Wealth<br>
+            <span>Identity for an Independent Wealth Manager</span></h3>
+        </a>
+    </div>   
+    
+    <div class="coverContainer">  
+        <a  href="cente.html">
+            <img class="project" id="homepagePic" src="assets/cente/centecover.jpg">
+            <h3>Cente<br>
+            <span>Branding for a Bike Frame Manufacturing Company</span></h3>
+        </a>
+    </div>      
+
+    <div class="coverContainer">  
+        <a  href="sva.html">
+            <img class="project" id="homepagePic" src="assets/sva/svacover.jpg">
+            <h3>SVA.edu 4.0<br>
+            <span>Website Redesign for the School of Visual Arts</span></h3>
+        </a>
+    </div>  
+    
+    <div class="coverContainer">  
+        <a  href="viewbook.html">
+            <img class="project" id="homepagePic" src="assets/viewbook/vbcover.jpg">
+            <h3>SVA Digital Viewbook<br>
+            <span>Animated Promotional Website for the School of Visual Arts</span></h3>
+        </a>
+    </div>  
+
+    <div class="coverContainer">  
+        <a  href="aris9.html">
+            <img class="project" id="homepagePic" src="assets/aris/ariscover.jpg">
+            <h3>ARIS 9<br>
+            <span>Branding and Packaging for a Ham Radio Antenna</span></h3>
+        </a>
+    </div>  
+    
+    <div class="coverContainer">  
+        <a  href="theother99.html">
+            <img class="project" id="homepagePic" src="assets/theother99/99cover.jpg">
+            <h3>The Other 99<br>
+            <span>99 Days of Design Challenge</span></h3>
+        </a>
+    </div>      
+
+    <div class="coverContainer">  
+        <a  href="thesis.html">
+            <img class="project" id="homepagePic" src="assets/thesis/TPtPBcover.jpg">
+            <h3>The Powers that Press B<br>
+            <span>Thesis on Video Game Environmental Design</span></h3>
+        </a>
+    </div>      
+
+</div>    
+
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+ $(document).ready(function() {
+  $('#info-button').click(function(event) {
+    event.preventDefault();
+    $('#sidebar').toggleClass('show');
+    $('#overlay').toggle();
+    
+      
+      if ($(window).width() < 768) {
+      $('body').toggleClass('sidebar-open');
+    }
+  });
+
+  $('#close-button').click(function(event) {
+    event.preventDefault();
+    $('#sidebar').removeClass('show');
+    $('#overlay').hide();
+    
+      
+      if ($(window).width() < 768) { // if the window width is less than 768 pixels
+      $('body').removeClass('sidebar-open');
+    }
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest('#sidebar').length && !$(event.target).is('#sidebar') && !$(event.target).is('#info-button')) { // if the window width is less than 768 pixels
+      $('#sidebar').removeClass('show');
+      $('#overlay').hide();
+      
         
-    <div class="hover_img">
-        <a href="aris9.html">packaging for a ham radio antenna<span><img src="assets/thumb/aris.jpg"/></span></a>
-    </div>,
-    
-    <div class="hover_img">
-        <a href="theother99.html">a 99 days of design challenge<span><img src="assets/thumb/99.jpg"/></span></a>
-    </div>, 
-    
-    <div class="hover_img">
-        <a href="thesis.html">and a thesis on video game environmental design<span><img src="assets/thumb/thesis.jpg"/></span></a>
-    </div>.
+        if ($(window).width() < 768) { // if the window width is less than 768 pixels
+        $('body').removeClass('sidebar-open');
+      }
+    }
+  });
+  
+  $(window).resize(function() {
+    if ($(window).width() >= 768) {
+      $('body').removeClass('sidebar-open');
+    }
+  });
+});
 
-<!--
-    <div class="hover_img">
-        <a href="lwt.html">an ad campaign for Last Week Tonight<span><img src="assets/thumb/lwt.jpg"/></span></a>
-    </div>,-->
-    
-<!--    <div class="hover_img">
-        <a href="junior.html">a junior year portfolio book<span><img src="assets/thumb/junior.jpg"/></span></a>
-    </div>, -->
-    
-<!--    <div class="hover_img">
-        <a href="heads.html">an archive for headless art<span><img src="assets/thumb/head.jpg"/></span></a>
-    </div>, -->
+</script>
 
-<!--
-    <div class="hover_img">
-        <a href="covers.html">an American Classics cover series<span><img src="assets/thumb/cover.jpg"/></span></a>
-    </div>, -->
+</body>
 
-<!--    <div class="hover_img">
-        <a href="esteelauder.html">web assets for Estée Lauder<span><img src="assets/thumb/estee.jpg"/></span></a>
-    </div>, -->
-    
-    He has a design BFA from SVA. 
-<br><br>
-    Josh is currently working at Leibowitz Design, but he's always down to collaborate. He can be reached
-    
-    <div class="hover_img">
-        <a href="mailto:joshweingart@gmail.com">here<span><img src="assets/thumb/email.jpg"/></span></a>
-    </div>.
-</h1>    
-
-    <!–– fixing hover ––>
-    <script>
-    $('body').on('touchstart', function() {});
-    </script>
-</body>    
-</html> 
+</html>
