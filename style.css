@@ -354,6 +354,16 @@ body.projectSidebar-open {
 
 
 
+/*H I - D E F*/
+@media only screen and (min-width: 1600px) {
+
+    .hero h1 {
+    font-size: 120px;    
+    }
+
+
+}
+
 
 
 /*M O B I L E*/
